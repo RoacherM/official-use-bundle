@@ -1,0 +1,16 @@
+- insert:
+    - id: browser-use
+      name: '@deepseek-ai/dsh-browser-use'
+    - id: browser-use-playwright
+      name: '@deepseek-ai/dsh-experimental-browser-use-playwright-mcp'
+      config:
+        mode: launch
+        headless: false
+        executablePath: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+    - id: computer-use
+      name: '@deepseek-ai/dsh-computer-use'
+    - id: computer-use-cua
+      name: '@deepseek-ai/dsh-experimental-computer-use-cua-driver-mcp'
+      config:
+        command: /Users/byronwayne/.local/bin/cua-driver
+        args: [mcp]
